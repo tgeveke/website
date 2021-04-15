@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+<title> Tom Geveke's Personal Website </title>
+<link rel="stylesheet" href="styles.css">
+<meta charset="UTF-8">
+<meta name="description" content="Personal website to gain HTML knowledge">
+<meta name="keywords" content="tom,geveke,tomgeveke,geveke,engineering,blog,engineer">
+<meta name="author" content="Tom Geveke">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+
+<nav>
+<ul id="Top">
+  <li><a href="#home">Home</a></li>
+  <li><a href="#news">Blog</a></li>
+  <li><a href="#news">Reloc8er</a></li>
+  <li><a href="#contact">Contact</a></li>
+  <li><a href="#about">About</a></li>
+</ul>
+</nav>
+
+<h1> Welcome to my website! </h1>
+
+<section>
+<br>
+<h2> Chart title:</h2>
+<table>
+  <tr>
+    <th> Question </th>
+    <th> Answer </th>
+  </tr>
+  <tr>
+    <td>School?</td>
+    <td>Penn State</td>
+  </tr>
+  <tr>
+    <td>Age?</td>
+    <td>20 years old</td>
+  </tr>
+  <tr>
+    <td>Major?</td>
+    <td>Mechanical engineering</td>
+  </tr>
+  <tr>
+    <td>Minor?</td>
+    <td>Engineering leadership development </td>
+  </tr>
+</table>
+</section>
+
+
+<br>
+<p class="font"> Click the images below for more program information </p>
+<div class="row" style="width:750px;height:400px">
+<div class="column" style="border:transparent">
+<a href="https://www.me.psu.edu/" target="_blank" title="Penn State mechanical engineering department"
+style="background-color:transparent">
+    <img src="me-header-mobile.png" style="padding:90px 20px" alt="Penn State mechanical engineering" style="width:100%">
+</a> 
+</div>
+  <div class="column" style="border:transparent"> 
+<a href="https://www.sedtapp.psu.edu/eld/undergraduate-minor.aspx" target="_blank" title="Penn State engineering leadership minor information"
+style="background-color:transparent">
+    <img src="ELD.jpg" alt="Engineering leadership minor" style="padding:30px 40px">
+</a>
+  </div>
+</div>
+
+
+<br>
+<dl>
+  <dt><h2>Some more details about myself</h2></dt>
+  <dd><p>- Seamus</p></dd>
+<dd><p>- Seamus</p></dd>
+<dd><p>- Seamus</p></dd>
+</dl>
+
+
+<br>
+<article class="blog">
+<h2> Sample blog post </h2>
+<p> Sample text, like today my dog Seamus barked at the mailman. This really says a lot about society. </p>
+<figure>
+  <img src="dog.jpg" alt="Dog">
+  <figcaption>Fig.1 - My dog, Seamus</figcaption>
+</figure>
+</article>
+
+<br>
+<hr>
+<form action="mail.php" method="post">
+  <label for="name">Name:</label><br>
+  <input type="text" id="name" name="name" placeholder="John Doe"><br>
+<br>
+  <label for="email">E-mail:</label><br>
+  <input type="text" id="email" name="email" placeholder="johndoe@gmail.com">
+<br>
+<br>
+  <label for="message">Message:</label><br>
+<textarea name="message" id="message" placeholder="Message"></textarea>
+<br>
+<br>
+<label for="response">How can I contact you?:</label>
+<select id="response" name="response">
+  <option value="none">Don't</option>
+  <option value="email">Email</option>
+  <option value="text">Text 
+</select>
+<br>
+<br>
+<input type="submit" value="Submit" class="font box">
+</form>
+
+<br>
+<hr>
+ <p>City name:</p>
+<input type="text" id="numinput" name="numinput" value="">
+<br>
+<br>
+<select id="cars" name="cars">
+  <option value="none">Don't</option>
+  <option value="email">Email</option>
+  <option value="text">Text 
+</select>
+<br>
+<br>
+<button id="btn" onclick="testfunction()">Submit</button>
+<br>
+<br>
+<div class="font" id="container"></div>
+<br>
+<div class="font" id="container1"></div>
+<br>
+<button id="clearbtn" onclick="clearBox()">Clear</button>
+</div>
+
+</body>
+
+<script>
+function testfunction() {
+var test = document.getElementById("numinput").value;
+switch (test) {
+case "LA":
+var info = "LA is located in southern California";
+document.getElementById("container").innerHTML+= info;
+break;
+case"NYC":
+document.getElementById("container").innerHTML+= test;
+break;
+}
+
+var test2 = document.getElementById("cars").value;
+document.getElementById("container1").innerHTML+= test2;
+}
+
+function clearBox()
+{
+    document.getElementById("container").innerHTML = "";
+}
+</script>
+
+<br>
+<footer>
+<a href="#Top" style="float:right" class="box font"> Go to top </a>
+<br>
+<hr>
+<address>
+Website by Tom Geveke
+<br>
+<br>
+<a href="mailto:tgeveke1@gmail.com" title="Launch mail app" class="box"> Email me </a>
+<br>
+<br>
+Created on 2/20/2021
+</address>
+<hr>
+</footer>
+
+</html>
