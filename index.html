@@ -1,183 +1,153 @@
 <!DOCTYPE html>
-<html lang="en-US">
-
+<html>
 <head>
-<title> Tom Geveke's Personal Website </title>
-<link rel="stylesheet" href="styles.css">
-<meta charset="UTF-8">
-<meta name="description" content="Personal website to gain HTML knowledge">
-<meta name="keywords" content="tom,geveke,tomgeveke,geveke,engineering,blog,engineer">
-<meta name="author" content="Tom Geveke">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-</head>
+	<title> Tom Geveke's Personal Site </title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="generator" content="">
+	
+	<script src="https://kit.fontawesome.com/1772966ef5.js" crossorigin="anonymous"></script>
 
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Dosis:200,300,400,500,600,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:200,300,400,500,600,700" rel="stylesheet">
+	<link rel="icon" href="images/logo_nowords.png">
+</head>
 <body>
 
-<nav>
-<ul id="Top">
-  <li><a href="#home">Home</a></li>
-  <li><a href="#news">Blog</a></li>
-  <li><a href="#news">Reloc8er</a></li>
-  <li><a href="#contact">Contact</a></li>
-  <li><a href="#about">About</a></li>
-</ul>
-</nav>
-
-<h1> Welcome to my website! </h1>
-
-<section>
-<br>
-<h2> Chart title:</h2>
-<table>
-  <tr>
-    <th> Question </th>
-    <th> Answer </th>
-  </tr>
-  <tr>
-    <td>School?</td>
-    <td>Penn State</td>
-  </tr>
-  <tr>
-    <td>Age?</td>
-    <td>20 years old</td>
-  </tr>
-  <tr>
-    <td>Major?</td>
-    <td>Mechanical engineering</td>
-  </tr>
-  <tr>
-    <td>Minor?</td>
-    <td>Engineering leadership development </td>
-  </tr>
-</table>
-</section>
-
-
-<br>
-<p class="font"> Click the images below for more program information </p>
-<div class="row" style="width:750px;height:400px">
-<div class="column" style="border:transparent">
-<a href="https://www.me.psu.edu/" target="_blank" title="Penn State mechanical engineering department"
-style="background-color:transparent">
-    <img src="me-header-mobile.png" style="padding:90px 20px" alt="Penn State mechanical engineering" style="width:100%">
-</a> 
+<!-- Header -->
+<header class="item header margin-top-0">
+<div class="wrapper">
+	<nav role="navigation" class="navbar navbar-white navbar-embossed navbar-lg navbar-fixed-top">
+	<div class="container">
+		<div class="navbar-header">
+			<button data-target="#navbar-collapse-02" data-toggle="collapse" class="navbar-toggle" type="button">
+			<i class="fa fa-bars"></i>
+			<span class="sr-only">Toggle navigation</span>
+			</button>
+			<a href="index.html" class="navbar-brand brand"> <img src="images/logo_nowords.png" alt="Logo" class="logoimg" style="display: inline" /> Tom Geveke </a>
+		</div>
+		<div id="navbar-collapse-02" class="collapse navbar-collapse">
+			<ul class="nav navbar-nav navbar-right">
+				<li class="propClone navText"><a href="index.html">Home</a></li>
+				<li class="propClone navText"><a href="blog.html">Blog</a></li>
+				<li class="propClone navText"><a href="projects.html">Projects</a></li>
+				<li class="propClone navText"><a href="about.html">About me</a></li>
+				<li class="propClone navText"><a href="contact.html">Contact</a></li>
+			</ul>
+		</div>
+	</div>
+	</nav>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12 text-center">
+				<div class="text-homeimage">
+					<div class="maintext-image" data-scrollreveal="enter top over 1.3s after 0.1s">
+						 Tom Geveke's
+					</div>
+					<div class="subtext-image" data-scrollreveal="enter bottom over 1.5s after 0.3s">
+						 personal website
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 </div>
-  <div class="column" style="border:transparent"> 
-<a href="https://www.sedtapp.psu.edu/eld/undergraduate-minor.aspx" target="_blank" title="Penn State engineering leadership minor information"
-style="background-color:transparent">
-    <img src="ELD.jpg" alt="Engineering leadership minor" style="padding:30px 40px">
-</a>
-  </div>
+</header>
+
+
+<!-- Site Map -->
+<div class="item content">
+	<div class="container toparea">
+		<div class="row text-center">
+			<h2 class="stepTitle">Welcome! A quick site quide</h2>
+			<br>
+			<div class="col-md-4">
+			<a href="blog.html">
+				<div class="col sitemap hvr-fade">
+					<span class="numberstep"><i class="fa fa-keyboard"></i></span>
+					<h3 class="numbertext">Blog</h3>
+					<p style="color:black">
+						Click here to read my blog posts! Topics include technology, engineering, and rock climbing.
+					</p>
+					<br>
+				</div>
+				<!-- /.col-md-4 -->
+			</a>
+			</div>
+			<!-- /.col-md-4 col -->
+			<div class="col-md-4">
+			<a href="projects.html">
+				<div class="col sitemap hvr-fade">
+					<span class="numberstep"><i class="fas fa-laptop-code"></i></span>
+					<h3 class="numbertext">Personal Projects</h3>
+					<p style="color:black">
+						Click here to read about my personal projects. Currently, I'm working a lot on robotics with Python and MATLAB.
+					</p>
+					<br>
+				</div>
+				<!-- /.col -->
+			</a>
+			</div>
+			<!-- /.col-md-4 col -->
+			<div class="col-md-4">
+			<a href="about.html">
+				<div class="col sitemap hvr-fade">
+					<span class="numberstep"><i class="far fa-grin-beam fa-lg"></i></span>
+					<h3 class="numbertext">About Me</h3>
+					<p style="color:black">
+						Click here to read about my background, interests, and view my resume. 
+					</p>
+					<br>
+				</div>
+			</div>
+			</a>
+		</div>
+	<br>
+	<br>
+	</div>
 </div>
+		
 
-
-<br>
-<dl>
-  <dt><h2>Some more details about myself</h2></dt>
-  <dd><p>- Seamus</p></dd>
-<dd><p>- Seamus</p></dd>
-<dd><p>- Seamus</p></dd>
-</dl>
-
-
-<br>
-<article class="blog">
-<h2> Sample blog post </h2>
-<p> Sample text, like today my dog Seamus barked at the mailman. This really says a lot about society. </p>
-<figure>
-  <img src="dog.jpg" alt="Dog">
-  <figcaption>Fig.1 - My dog, Seamus</figcaption>
-</figure>
-</article>
-
-<br>
-<hr>
-<form action="mail.php" method="post">
-  <label for="name">Name:</label><br>
-  <input type="text" id="name" name="name" placeholder="John Doe"><br>
-<br>
-  <label for="email">E-mail:</label><br>
-  <input type="text" id="email" name="email" placeholder="johndoe@gmail.com">
-<br>
-<br>
-  <label for="message">Message:</label><br>
-<textarea name="message" id="message" placeholder="Message"></textarea>
-<br>
-<br>
-<label for="response">How can I contact you?:</label>
-<select id="response" name="response">
-  <option value="none">Don't</option>
-  <option value="email">Email</option>
-  <option value="text">Text 
-</select>
-<br>
-<br>
-<input type="submit" value="Submit" class="font box">
-</form>
-
-<br>
-<hr>
- <p>City name:</p>
-<input type="text" id="numinput" name="numinput" value="">
-<br>
-<br>
-<select id="cars" name="cars">
-  <option value="none">Don't</option>
-  <option value="email">Email</option>
-  <option value="text">Text 
-</select>
-<br>
-<br>
-<button id="btn" onclick="testfunction()">Submit</button>
-<br>
-<br>
-<div class="font" id="container"></div>
-<br>
-<div class="font" id="container1"></div>
-<br>
-<button id="clearbtn" onclick="clearBox()">Clear</button>
+<!-- Footer-->
+<div class="footer text-center" data-scrollreveal="enter top over 0.6s after 0.05s">
+	<div class="container">
+		<div class="row">
+			<p class="footernote">
+				 Connect With Me
+			</p>
+			<ul class="social-iconsfooter">
+				<li><a href="contact.html"><i class="fa fa-phone fa-lg"></i></a></li>
+				<li><a href="https://www.linkedin.com/in/thomasgeveke/" target="_blank"><i class="fab fa-linkedin-in fa-lg"></i></a></li>
+				<li><a href="https://www.twitter.com/jpegrobot" target="_blank"><i class="fa fa-twitter fa-lg"></i></a></li>
+				<li><a href="contact.html"><i class="fas fa-envelope-open fa-lg"></i></a></li>
+				<li><a href="https://www.instagram.com/tomgeveke" target="_blank"><i class="fa fa-instagram fa-lg"></i></a></li>
+			</ul>
+			<p>
+				 &copy; 2022 Tom Geveke <br/>
+			</p>
+		</div>
+	</div>
 </div>
 
-</body>
-
+<!-- SCRIPTS =============================-->
+<script src="js/jquery-.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/anim.js"></script>
 <script>
-function testfunction() {
-var test = document.getElementById("numinput").value;
-switch (test) {
-case "LA":
-var info = "LA is located in southern California";
-document.getElementById("container").innerHTML+= info;
-break;
-case"NYC":
-document.getElementById("container").innerHTML+= test;
-break;
-}
-
-var test2 = document.getElementById("cars").value;
-document.getElementById("container1").innerHTML+= test2;
-}
-
-function clearBox()
-{
-    document.getElementById("container").innerHTML = "";
-}
+//----HOVER CAPTION---//	  
+jQuery(document).ready(function ($) {
+	$('.fadeshop').hover(
+		function(){
+			$(this).find('.captionshop').fadeIn(150);
+		},
+		function(){
+			$(this).find('.captionshop').fadeOut(150);
+		}
+	);
+});
 </script>
-
-<br>
-<footer>
-<a href="#Top" style="float:right" class="box font"> Go to top </a>
-<br>
-<hr>
-<address>
-Website by Tom Geveke
-<br>
-<br>
-<a href="mailto:tgeveke1@gmail.com" title="Launch mail app" class="box"> Email me </a>
-<br>
-<br>
-Created on 2/20/2021
-</address>
-<hr>
-</footer>
-
+	
+</body>
 </html>
