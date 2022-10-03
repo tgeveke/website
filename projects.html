@@ -1,18 +1,22 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="generator" content="">
-<link href="css/bootstrap.min.css" rel="stylesheet">
-<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
-<link href="css/style.css" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Dosis:200,300,400,500,600,700" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Roboto:200,300,400,500,600,700" rel="stylesheet">
+	<title> Tom Geveke's Personal Site </title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="generator" content="">
+	
+	<script src="https://kit.fontawesome.com/1772966ef5.js" crossorigin="anonymous"></script>
+
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Dosis:200,300,400,500,600,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:200,300,400,500,600,700" rel="stylesheet">
+	<link rel="icon" href="images/logo_nowords.png">
 </head>
 <body>
 
-<!-- HEADER =============================-->
+<!-- Header -->
 <header class="item header margin-top-0">
 <div class="wrapper">
 	<nav role="navigation" class="navbar navbar-white navbar-embossed navbar-lg navbar-fixed-top">
@@ -22,15 +26,15 @@
 			<i class="fa fa-bars"></i>
 			<span class="sr-only">Toggle navigation</span>
 			</button>
-			<a href="index.html" class="navbar-brand brand"> Tom Geveke </a>
+			<a href="index.html" class="navbar-brand brand"> <img src="images/logo_nowords.png" alt="Logo" class="logoimg" style="display: inline" /> Tom Geveke </a>
 		</div>
 		<div id="navbar-collapse-02" class="collapse navbar-collapse">
 			<ul class="nav navbar-nav navbar-right">
-				<li class="propClone"><a href="index.html">Home</a></li>
-				<li class="propClone"><a href="shop.html">Shop</a></li>
-				<li class="propClone"><a href="product.html">Product</a></li>
-				<li class="propClone"><a href="checkout.html">Checkout</a></li>
-				<li class="propClone"><a href="contact.html">Contact</a></li>
+				<li class="propClone navText"><a href="index.html">Home</a></li>
+				<li class="propClone navText"><a href="blog.html">Blog</a></li>
+				<li class="propClone navText"><a href="projects.html">Projects</a></li>
+				<li class="propClone navText"><a href="about.html">About me</a></li>
+				<li class="propClone navText"><a href="contact.html">Contact</a></li>
 			</ul>
 		</div>
 	</div>
@@ -40,7 +44,7 @@
 			<div class="col-md-12 text-center">
 				<div class="text-pageheader">
 					<div class="subtext-image" data-scrollreveal="enter bottom over 1.7s after 0.1s">
-						 Blog
+						 Projects
 					</div>
 				</div>
 			</div>
@@ -49,12 +53,19 @@
 </div>
 </header>
 
-<!-- CONTENT =============================-->
+<!-- Back to top button -->
+<a class="top-link hide" href="" id="js-top">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6"><path d="M12 6H0l6-6z"/></svg>
+  <span class="screen-reader-text">Back to top</span>
+</a>
+
 <section class="item content">
+
+<!-- Content -->
 <div class="container toparea">
 	<div class="underlined-title">
 		<div class="editContent">
-			<h1 class="text-center latestitems">Recent posts</h1>
+			<h1 class="text-center latestitems">Recent Projects</h1>
 		</div>
 		<div class="wow-hr type_short">
 			<span class="wow-hr-h">
@@ -64,212 +75,205 @@
 			</span>
 		</div>
 	</div>
+
 	<div class="row">
-		<div class="col-md-4">
+	
+	<!-- Blog post 1 -->
+		<div class="col-md-4" id="postblockleft" onclick="showLeftPost()" style="display:block">
 			<div class="productbox">
 				<div class="fadeshop">
 					<div class="captionshop text-center" style="display: none;">
-						<h3>Post Title</h3>
+						<h3>Senior Design: ABB2400 real time control with ROS</h3>
 						<p>
-							 This is a short excerpt to generally describe what the item is about.
-						</p>
-						<p>
-							<a href="#" class="learn-more detailslearn"><i class="fa fa-link"></i> Open post</a>
+							 Offline programming is suitable for many robotic operations, but when real-time sensors are used, an in-the-loop system is needed.
+							<br>
+							<h4 class="linkbutton"><i class="fa fa-link"></i><span id="buttontextleft"> Open Post</span></h4>
 						</p>
 					</div>
-					<span class="maxproduct"><img src="images/product1-1.jpg" alt=""></span>
+					<span class="maxproduct"><img src="images/abb2400.jpg" alt=""></span>
 				</div>
 				<div class="product-details">
-					<a href="#">
-					<h1>Blog Title</h1>
-					</a>
+					<h1>ABB2400 Real Time Control with ROS</h1>
 					<span class="price">
-					<span class="edd_price">Posted 5/3/2021</span>
+					<span class="edd_price">Posted 9/28/2022</span>
 					</span>
 				</div>
 			</div>
 		</div>
-		<!-- /.productbox -->
-		<div class="col-md-4">
-			<div class="productbox">
-				<div class="fadeshop">
-					<div class="captionshop text-center" style="display: none;">
-						<h3>Item Name</h3>
-						<p>
-							 This is a short excerpt to generally describe what the item is about.
-						</p>
-						<p>
-							<a href="#" class="learn-more detailslearn"><i class="fa fa-shopping-cart"></i> Purchase</a>
-							<a href="#" class="learn-more detailslearn"><i class="fa fa-link"></i> Details</a>
-						</p>
-					</div>
-					<span class="maxproduct"><img src="images/product2.jpg" alt=""></span>
-				</div>
-				<div class="product-details">
-					<a href="#">
-					<h1>FastSell Theme</h1>
-					</a>
-					<span class="price">
-					<span class="edd_price">$49.00</span>
-					</span>
-				</div>
-			</div>
-		</div>
-		<!-- /.productbox -->
-		<div class="col-md-4">
-			<div class="productbox">
-				<div class="fadeshop">
-					<div class="captionshop text-center" style="display: none;">
-						<h3>Item Name</h3>
-						<p>
-							 This is a short excerpt to generally describe what the item is about.
-						</p>
-						<p>
-							<a href="#" class="learn-more detailslearn"><i class="fa fa-shopping-cart"></i> Purchase</a>
-							<a href="#" class="learn-more detailslearn"><i class="fa fa-link"></i> Details</a>
-						</p>
-					</div>
-					<span class="maxproduct"><img src="images/product2-3.jpg" alt=""></span>
-				</div>
-				<div class="product-details">
-					<a href="#">
-					<h1>Biscaya Theme</h1>
-					</a>
-					<span class="price">
-					<span class="edd_price">$49.00</span>
-					</span>
-				</div>
-			</div>
-		</div>
-		<!-- /.productbox -->
+	<div class="expandblog text-center" style="display:none" id="postcontentleft">
+		<h3>Senior Design Capstone: ABB2400 real time control with ROS</h3>
+			<p align="left">
+				 <a href="https://www.ros.org/" target="_blank">Robot Operating System (ROS)</a> is a complex set of packages that introduces complexity to developing robotic applications.
+				 Considering these challenges, many systems use ROS to leverage inter-nodal communication and simulation, as well as ready-to-run packages, such as MoveIt!
+				
+				<br>
+				For this project, our team was asked to move a <a href="https://en.wikipedia.org/wiki/Photogrammetry" target="_blank">photogrammetry</a> procedure to ROS.
+				The current workflow is largely manual, with input needed multiple times from the operator.
+				<span><img src="images/ros_diagram.jpg" alt="can't display image" width="400"></span> 
+				<br>
+				We have so far been able to connect to and control the robot using ROS_industrial packages provided by ABB.
+				In the near future, we are going to connect the Microsoft Azure Kinect RGB-D camera using it's own ROS node, and work on automating the entire operation.
+				<br>
+				Additionally, our team is developing a TCP communication link between the Jetson taking images and the host PC operating the robot.
+				This communication allows for continous scene-building and live visualization during operation.
+				<br>
+				By Thanksgiving this year, we hope these upgrades will be finalized and ready to be presented in the 2022 Project Showcase in December.
+			</p>
+			<button class="expandbutton" onclick="expandfull('left')" id="expandButtonleft">
+				<i class="fas fa-arrow-alt-circle-down fa-lg" id="expandicon1left" style="margin-right:5px"></i>
+				<p style="display:inline" id="buttonTextleft"> Show full post </p>
+				<i class="fas fa-arrow-alt-circle-down fa-lg" id="expandicon2left" style="margin-left:5px"></i>
+			</button>
 	</div>
-	<div class="row">
-		<div class="col-md-4">
-			<div class="productbox">
-				<div class="fadeshop">
-					<div class="captionshop text-center" style="display: none;">
-						<h3>Item Name</h3>
-						<p>
-							 This is a short excerpt to generally describe what the item is about.
-						</p>
-						<p>
-							<a href="#" class="learn-more detailslearn"><i class="fa fa-shopping-cart"></i> Purchase</a>
-							<a href="#" class="learn-more detailslearn"><i class="fa fa-link"></i> Details</a>
-						</p>
-					</div>
-					<span class="maxproduct"><img src="images/product1.jpg" alt=""></span>
+
+	<!-- Blog post 2 -->
+	<div class="col-md-4" id="postblockcenter" onclick="showCenterPost()" style="display:block">
+		<div class="productbox">
+			<div class="fadeshop">
+				<div class="captionshop text-center" style="display: none;">
+					<h3>Vision-Based Intelligent Pick and Place</h3>
+					<p>
+						 Complex objects are inherently difficult to grasp. Given the constraignts of a parallel gripper, how should a robot pick up a part? 
+						<br><br>
+						<h4 class="linkbutton"><i class="fa fa-link"></i><span id="buttontextcenter"> Open Post</span></h4>
+					</p>
 				</div>
-				<div class="product-details">
-					<a href="#">
-					<h1>Expertum Theme</h1>
-					</a>
-					<span class="price">
-					<span class="edd_price">$35.00</span>
-					</span>
-				</div>
+				<span class="maxproduct"><img src="images/pickplace.jpg" alt=""></span>
+			</div>
+			<div class="product-details">
+				<h1>Intelligent Pick and Place</h1>
+				<span class="price">
+				<span class="edd_price"> Posted 9/28/2022 </span>
 			</div>
 		</div>
-		<!-- /.productbox -->
-		<div class="col-md-4">
-			<div class="productbox">
-				<div class="fadeshop">
-					<div class="captionshop text-center" style="display: none;">
-						<h3>Item Name</h3>
-						<p>
-							 This is a short excerpt to generally describe what the item is about.
-						</p>
-						<p>
-							<a href="#" class="learn-more detailslearn"><i class="fa fa-shopping-cart"></i> Purchase</a>
-							<a href="#" class="learn-more detailslearn"><i class="fa fa-link"></i> Details</a>
-						</p>
-					</div>
-					<span class="maxproduct"><img src="images/product2-2.jpg" alt=""></span>
-				</div>
-				<div class="product-details">
-					<a href="#">
-					<h1>Serenity Theme</h1>
-					</a>
-					<span class="price">
-					<span class="edd_price">$49.00</span>
-					</span>
-				</div>
-			</div>
-		</div>
-		<!-- /.productbox -->
-		<div class="col-md-4">
-			<div class="productbox">
-				<div class="fadeshop">
-					<div class="captionshop text-center" style="display: none;">
-						<h3>Item Name</h3>
-						<p>
-							 This is a short excerpt to generally describe what the item is about.
-						</p>
-						<p>
-							<a href="#" class="learn-more detailslearn"><i class="fa fa-shopping-cart"></i> Purchase</a>
-							<a href="#" class="learn-more detailslearn"><i class="fa fa-link"></i> Details</a>
-						</p>
-					</div>
-					<span class="maxproduct"><img src="images/product3.png" alt=""></span>
-				</div>
-				<div class="product-details">
-					<a href="#">
-					<h1>Hypnosa Theme</h1>
-					</a>
-					<span class="price">
-					<span class="edd_price">$35.00</span>
-					</span>
-				</div>
-			</div>
-		</div>
-		<!-- /.productbox -->
 	</div>
+	<div class="expandblog text-center" style="display:none" id="postcontentcenter">
+		<div class="">
+		<h3>Intelligent Pick and Place</h3>
+		<p align="left">
+		In CAIS lab, we are researching control systems for manufacturing. 
+		The miniture smart manufacturing center we built consists of a Prusa i3 3D printer and uFactory xArm 6 degree of freedom robot arm.
+		
+		<br>
+		Our current approach is to use a mix of (x,y,z) data parsed from the print's .gcode file and computer vision on an overhead image capture to inform grasp angle.
+		This approach is not perfect, and we are exploring more complex solutions.
+
+		<br>
+		Applying machine learning techniques to train a system on optimal grasps is possble, and is a current active area of research.
+		Using the Cornell labelled training dataset, it is possible to train a system without any additional data.
+		
+		<br>
+		We are working on an automatically-generated dataset by leveraging robotic movement to create large training data image sets. 
+		To do this, 10 3D-printed parts are placed in known positions (x,y,z,roll,pitch,yaw) and images are taken from a static overhead camera.
+		These images can be labeled automatically using the known position as a label for grasp parameters.
+		<img src="images/cais_diagram.jpg" alt="">
+		<br>
+		Look for an upcoming conference paper this November on this research. 
+		</p>
+
+
+		</div>
+
+		<button class="expandbutton" onclick="expandfull('center')" id="expandButtoncenter">
+			<i class="fas fa-arrow-alt-circle-down fa-lg" id="expandicon1center" style="margin-right:5px"></i>
+			<p style="display:inline" id="buttonTextcenter"> Show full post </p>
+			<i class="fas fa-arrow-alt-circle-down fa-lg" id="expandicon2center" style="margin-left:5px"></i>
+		</button>
+	</div>
+
+	<!-- Blog post 3 -->
+		<div class="col-md-4" id="postblockright" onclick="showRightPost()" style="display:block">
+			<div class="productbox">
+				<div class="fadeshop">
+					<div class="captionshop text-center" style="display: none;">
+						<h3>2D Path Planning With MATLAB</h3>
+						<p>
+							 What is the optimal path for a mobile robot to take to reach a target? What if there are obsticles?
+							<br><br>
+							<h4 class="linkbutton"><i class="fa fa-link"></i><span id="buttontextright"> Open Post</span></h4>
+						</p>
+					</div>
+					<span class="maxproduct"><img src="images/pathplan.jpg" alt=""></span>
+				</div>
+				<div class="product-details">
+					<h1>2D Path Planning With MATLAB</h1>
+					<span class="price">
+					<span class="edd_price">Posted 9/28/2022</span>
+					</span>
+				</div>
+			</div>
+		</div>
+	<div class="expandblog text-center" style="display:none" id="postcontentright">
+		<h3>2D Path Planning With MATLAB</h3>
+			<p align="left">
+				After working for awhile at iRobot, I began to appreciate the complexity of the problem of mobile robot mobility.
+
+				 <br>
+				 For fun, I began programming a mobile robot simulation in MATLAB. 
+				 Diving the area into a 2-dimensional array, with a random initial position and target position, 
+				 the "robot" was able to navigate quickly using the minimum distance to target move.
+				 <br>
+
+				 The addition of obsticles for the robot to naviage around made the problem much more difficuly.
+				 The direct path initially taken by the robot does not allow flexibility to execute moves that deviate from the best path.
+				 
+				 <br>
+				 To counter this, the robot needs more information than before. A knowledge of past moves and spaces already travelled to gives us the ability to retrace.
+				 In addition, the ability to look ahead in time, simulating different paths and evaluating various options means the robot can determine paths around small obsticles.
+				 <br>
+				<img src="images/matlab.jpg" alt="" width="500px">
+
+				 <br>
+				 My approach lead to a worse version of <a href="https://en.wikipedia.org/wiki/Dijkstra%27s_algorithm" target="_blank">Dijkstra's algorithm</a>, first researched in the 1950's. 
+				 Using graph theory, a computer science topic, is the approach I am interested in to determine minimum viable distance to a target node.
+
+				 <br>
+				 In the future, I hope to continue this work to evaulate different established 2D path planning algorithms, such as A* and Rapidly-exploring random trees (RRT).
+				 <br>
+			</p>
+	
+	<button class="expandbutton" onclick="expandfull('right')" id="expandButtonright">
+		<i class="fas fa-arrow-alt-circle-down fa-lg" id="expandicon1right" style="margin-right:5px"></i>
+		<p style="display:inline" id="buttonTextright"> Show full post </p>
+		<i class="fas fa-arrow-alt-circle-down fa-lg" id="expandicon2right" style="margin-left:5px"></i>
+	</button>
+	
 </div>
-</div>
+
+
 </section>
 
-<!-- CALL TO ACTION =============================-->
-<section class="content-block" style="background-color:#00bba7;">
-<div class="container text-center">
-<div class="row">
-	<div class="col-sm-10 col-sm-offset-1">
-		<div class="item" data-scrollreveal="enter top over 0.4s after 0.1s">
-			<h1 class="callactiontitle"> Promote Items Area Give Discount to Buyers <span class="callactionbutton"><i class="fa fa-gift"></i> WOW24TH</span>
-			</h1>
+<!-- Footer-->
+<br>
+<div class="footer text-center" data-scrollreveal="enter top over 0.6s after 0.05s">
+	<div class="container">
+		<div class="row">
+			<p class="footernote">
+				 Connect With Me
+			</p>
+			<ul class="social-iconsfooter">
+				<li><a href="contact.html"><i class="fa fa-phone fa-lg"></i></a></li>
+				<li><a href="https://www.linkedin.com/in/thomasgeveke/" target="_blank"><i class="fab fa-linkedin-in fa-lg"></i></a></li>
+				<li><a href="https://www.twitter.com/jpegrobot" target="_blank"><i class="fa fa-twitter fa-lg"></i></a></li>
+				<li><a href="contact.html"><i class="fas fa-envelope-open fa-lg"></i></a></li>
+				<li><a href="https://www.instagram.com/tomgeveke" target="_blank"><i class="fa fa-instagram fa-lg"></i></a></li>
+			</ul>
+			<p>
+				 &copy; 2022 Tom Geveke <br/>
+			</p>
 		</div>
 	</div>
 </div>
-</div>
-</section>
 
-<!-- FOOTER =============================-->
-<div class="footer text-center">
-<div class="container">
-	<div class="row">
-		<p class="footernote">
-			 Connect with Scorilo
-		</p>
-		<ul class="social-iconsfooter">
-			<li><a href="contact.html"><i class="fa fa-phone fa-lg"></i></a></li>
-			<li><a href="https://www.linkedin.com/in/thomasgeveke/" target="_blank"><i class="fab fa-linkedin-in fa-lg"></i></a></li>
-			<li><a href="https://www.twitter.com/jpegrobot" target="_blank"><i class="fa fa-twitter fa-lg"></i></a></li>
-			<li><a href="contact.html"><i class="fas fa-envelope-open fa-lg"></i></a></li>
-			<li><a href="https://www.instagram.com/tomgeveke" target="_blank"><i class="fa fa-instagram fa-lg"></i></a></li>
-		</ul>
-		<p>
-			 &copy; 2022 Tom Geveke <br/>
-		</p>
-	</div>
-</div>
-</div>
-
-<!-- Load JS here for greater good =============================-->
+<!-- Scripts -->
 <script src="js/jquery-.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script src="js/anim.js"></script>
 <script>
-//----HOVER CAPTION---//	  
+
+//---- Hover Caption ---//	  
 jQuery(document).ready(function ($) {
-	$('.fadeshop').hover(
+	$('.productbox').hover(
 		function(){
 			$(this).find('.captionshop').fadeIn(150);
 		},
@@ -278,6 +282,127 @@ jQuery(document).ready(function ($) {
 		}
 	);
 });
+
+function showLeftPost() {
+		var x = document.getElementById("postblockleft");
+		var xx = document.getElementById("postcontentleft");
+		var y = document.getElementById("postblockcenter");
+		var z = document.getElementById("postblockright");
+		var button = document.getElementById("buttontextleft");
+
+		  if (xx.style.display == "none") {
+			x.style.display = "block";			  
+			xx.style.display = "block";		  
+			y.style.display = "none";
+			z.style.display = "none";
+			button.innerHTML = " Close post";
+		  } 
+		  else {
+			x.style.display = "block";			  
+			xx.style.display = "none";		  
+			y.style.display = "block";
+			z.style.display = "block";
+			button.innerHTML = " Open post";
+
+		  }					  	
+	}
+	
+	function showCenterPost() {
+		var x = document.getElementById("postblockleft");
+		var y = document.getElementById("postblockcenter");
+		var yy = document.getElementById("postcontentcenter");
+		var z = document.getElementById("postblockright");
+		var button = document.getElementById("buttontextcenter");
+
+		  if (yy.style.display == "none") {
+			x.style.display = "none";			  
+			yy.style.display = "block";		  
+			y.style.display = "block";
+			z.style.display = "none";
+			button.innerHTML = " Close post";
+		  } 
+		  else {
+			x.style.display = "block";			  
+			yy.style.display = "none";		  
+			y.style.display = "block";
+			z.style.display = "block";
+			button.innerHTML = " Open post";
+		  }					
+	}
+	
+	function showRightPost() {
+		var x = document.getElementById("postblockleft");
+		var y = document.getElementById("postblockcenter");
+		var z = document.getElementById("postblockright");
+		var zz = document.getElementById("postcontentright");
+		var button = document.getElementById("buttontextright");
+
+		  if (zz.style.display == "none") {
+			x.style.display = "none";			  
+			y.style.display = "none";
+			z.style.display = "block";
+			zz.style.display = "block";		  
+			button.innerHTML = " Close post";		  
+		} 
+		  else {
+			x.style.display = "block";			  
+			y.style.display = "block";
+			z.style.display = "block";
+			zz.style.display = "none";	
+			button.innerHTML = " Open post";
+
+		  }					
+	}	
+	
+	function expandfull(location) {
+		var x = document.getElementById("postcontent"+location);
+		var y = document.getElementById("buttonText"+location);
+		var z = document.getElementById("expandicon1"+location);
+		var zz = document.getElementById("expandicon2"+location);
+		var zzz = document.getElementById("closebutton"+location);
+
+		  if (x.style.height == "auto") {
+			x.style.height = "400px";
+			y.innerHTML = "Show full post";
+			z.className = "fas fa-arrow-circle-down fa-lg";
+			zz.className = "fas fa-arrow-circle-down fa-lg";
+		  }
+			
+		  else {
+		  	x.style.height = "auto";
+			x.style.paddingBottom = "100px";
+			y.innerHTML = "Show less";
+			z.className = "fas fa-arrow-circle-up fa-lg";
+			zz.className = "fas fa-arrow-circle-up fa-lg";
+		  }			
+	}
+
+	// Get the modal
+	var modal = document.getElementById("myModal");
+
+	// Get the button that opens the modal
+	var btn = document.getElementById("myBtn");
+
+	// Get the <span> element that closes the modal
+	var span = document.getElementsByClassName("close")[0];
+
+	// When the user clicks the button, open the modal 
+	btn.onclick = function() {
+	  modal.style.display = "block";
+	}
+
+	// When the user clicks on <span> (x), close the modal
+	span.onclick = function() {
+	  modal.style.display = "none";
+	}
+
+	// When the user clicks anywhere outside of the modal, close it
+	window.onclick = function(event) {
+	  if (event.target == modal) {
+		modal.style.display = "none";
+	  }
+	}
+
 </script>
 </body>
 </html>
